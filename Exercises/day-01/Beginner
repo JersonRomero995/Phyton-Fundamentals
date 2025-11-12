@@ -1,0 +1,15 @@
+# Exercise 1: Temperature Converter
+# Write a function that converts Celsius to Fahrenheit
+# Formula: F = (C * 9/5) + 32
+
+# Exercise 2: Even or Odd
+# Write a function that checks if a number is even or odd
+
+# Exercise 3: Simple Calculator
+# Create a calculator with +, -, *, / operations
+
+# Exercise 4: List Maximum
+# Find the maximum number in a list without using max()
+
+# Exercise 5: Palindrome Checker
+# Check if a word reads the same forwards and backwards
