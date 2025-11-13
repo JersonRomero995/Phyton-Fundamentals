@@ -28,3 +28,8 @@ def find_max(numbers):
 # Solution 5
 def is_palindrome(word):
     return word.lower() == word.lower()[::-1]
+
+#test
+hello="hello"
+print(hello)
+

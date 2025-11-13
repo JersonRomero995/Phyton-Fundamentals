@@ -1,5 +1,7 @@
 Quick Reference Card
-python# VARIABLES
+python
+
+# VARIABLES
 x = 10                    # Assignment
 y = "Hello"              # String
 z = True                 # Boolean
@@ -36,3 +38,10 @@ set_a = {1, 2, 3}            # Set
 # INPUT/OUTPUT
 input("Prompt: ")        # User input
 print("Output")          # Print output
+
+# ❌ INVALID variable names
+1user = "Invalid"      # Can't start with number
+user-name = "Invalid"  # No hyphens
+user name = "Invalid"  # No spaces
+class = "Invalid"      # Can't use Python keywords
+

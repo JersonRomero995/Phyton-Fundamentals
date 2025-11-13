@@ -52,7 +52,9 @@ print("Hello")  # You can add comments after code too
 Variables and Data Types
 What is a Variable?
 A variable is a container for storing data values. Think of it as a labeled box where you can put information.
-python# Creating variables (assignment)
+python
+
+# Creating variables (assignment)
 name = "John"
 age = 25
 height = 5.9
@@ -73,9 +75,13 @@ USER_NAME = "Dave"    # UPPERCASE (usually constants)
 # user-name = "Invalid"  # No hyphens
 # user name = "Invalid"  # No spaces
 # class = "Invalid"      # Can't use Python keywords
+
+
 Data Types
 Python has several built-in data types:
-python# 1. INTEGER (int) - Whole numbers
+python
+
+# 1. INTEGER (int) - Whole numbers
 age = 25
 year = 2024
 negative = -10
@@ -99,7 +105,9 @@ has_permission = False
 # 5. NONE TYPE - Represents absence of value
 result = None
 Type Checking and Conversion
-python# Check type
+python
+
+# Check type
 x = 10
 print(type(x))  # <class 'int'>
 
@@ -124,7 +132,9 @@ y = float(x)  # 5.0
 z = 3.9
 z_int = int(z)  # 3 (not 4!)
 String Operations
-python# String concatenation
+python
+
+# String concatenation
 first_name = "John"
 last_name = "Doe"
 full_name = first_name + " " + last_name  # "John Doe"
@@ -151,7 +161,8 @@ print(word[0:3])  # 'Pyt' (slice)
 
 Operators
 Arithmetic Operators
-pythonx = 10
+python
+x = 10
 y = 3
 
 # Basic operations
@@ -170,7 +181,9 @@ count -= 2   # Same as: count = count - 2  (now 4)
 count *= 3   # Same as: count = count * 3  (now 12)
 count /= 4   # Same as: count = count / 4  (now 3.0)
 Comparison Operators
-pythonx = 10
+python
+
+x = 10
 y = 5
 
 print(x == y)   # False  Equal to
@@ -184,7 +197,9 @@ print(x <= y)   # False  Less than or equal to
 print("apple" == "apple")   # True
 print("apple" < "banana")   # True (alphabetical order)
 Logical Operators
-python# AND - Both conditions must be True
+python
+
+# AND - Both conditions must be True
 age = 25
 has_license = True
 can_drive = age >= 18 and has_license  # True
@@ -205,7 +220,9 @@ is_valid = (age >= 18 and has_permission) or age >= 21
 
 Control Flow
 If Statements
-python# Basic if
+python
+
+# Basic if
 age = 18
 if age >= 18:
     print("You are an adult")
@@ -242,8 +259,11 @@ if age >= 18:
         print("You need a license")
 else:
     print("You are too young to drive")
+
 For Loops
-python# Loop through a range
+python
+
+# Loop through a range
 for i in range(5):
     print(i)  # Prints 0, 1, 2, 3, 4
 
