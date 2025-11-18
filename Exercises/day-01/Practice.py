@@ -45,3 +45,8 @@ print(can_drive)  # True
 
 
 # line 311 
+
+for i in range(10):
+    if i == 5:
+        break  # Stop when i equals 5
+    print(i)  # Prints 0, 1, 2, 3, 4

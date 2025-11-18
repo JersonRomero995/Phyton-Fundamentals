@@ -324,7 +324,9 @@ Functions
 What is a Function?
 A function is a reusable block of code that performs a specific task.
 Defining Functions
-python# Basic function
+python
+
+# Basic function
 def greet():
     print("Hello, World!")
 
@@ -368,7 +370,9 @@ first_name, last_name = get_name()
 print(first_name)  # John
 print(last_name)   # Doe
 Function Scope
-python# Global variable
+python
+
+# Global variable
 global_var = "I'm global"
 
 def my_function():
@@ -409,7 +413,9 @@ print(calculate_area.__doc__)
 
 Data Structures
 Lists
-python# Create a list
+python
+
+# Create a list
 fruits = ["apple", "banana", "cherry"]
 numbers = [1, 2, 3, 4, 5]
 mixed = [1, "hello", 3.14, True]
@@ -430,7 +436,9 @@ print(len(fruits))             # Length
 print("apple" in fruits)       # Check if item exists
 fruits.sort()                  # Sort in place
 Dictionaries
-python# Create a dictionary (key-value pairs)
+python
+
+# Create a dictionary (key-value pairs)
 student = {
     "name": "Alice",
     "age": 20,
