@@ -496,9 +496,11 @@ print(set1 | set2)  # Union: {1, 2, 3, 4, 5}
 print(set1 & set2)  # Intersection: {3}
 print(set1 - set2)  # Difference: {1, 2}
 
-Input/Output
+# Input/Output
 User Input
-python# Get input from user (always returns string)
+python
+
+# Get input from user (always returns string)
 name = input("Enter your name: ")
 print(f"Hello, {name}!")
 

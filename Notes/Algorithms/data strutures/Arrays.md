@@ -132,7 +132,8 @@ Why Use Tuples?
 ✅ Perfect for fixed data (coordinates, RGB colors, etc.)
 
 Creating Tuples
-python# Empty tuple
+python
+# Empty tuple
 empty_tuple = ()
 
 # Single item tuple (note the comma!)
@@ -441,7 +442,9 @@ snapshots = [
 vm_snapshots = [s for s in snapshots if s[1] == "vm-web-01"]
 
 Quick Reference Card
-python# CREATING
+python
+
+# CREATING
 list_a = [1, 2, 3]
 tuple_a = (1, 2, 3)
 array_a = array.array('i', [1, 2, 3])
