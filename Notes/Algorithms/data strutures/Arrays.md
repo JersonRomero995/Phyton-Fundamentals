@@ -1,7 +1,8 @@
-Python Array Data Structures
-📚 Table of Contents
+# Python Array Data Structures
+# 📚 Table of Contents
 
--What are Arrays?
+# -What are Arrays?
+```
 -Lists (Python's Dynamic Arrays)
 -Tuples (Immutable Arrays)
 -Array Module
@@ -9,241 +10,299 @@ Python Array Data Structures
 -Common Operations
 -Performance Comparison
 -Best Practices
+```
 
-
-What are Arrays?
+# What are Arrays?
 An array is a data structure that stores a collection of elements (values or variables), each identified by an index or key.
-Key Characteristics:
-
+#Key Characteristics:
+```
 📦 Store multiple items in a single variable
 🔢 Elements are ordered and indexed (starting at 0)
 🎯 Allow direct access to elements via index
 📊 Typically store elements of the same type (in some languages)
-
+```
 Visual Representation:
+```
 Index:    0      1      2      3      4
          ┌──────┬──────┬──────┬──────┬──────┐
 Array:   │  10  │  20  │  30  │  40  │  50  │
          └──────┴──────┴──────┴──────┴──────┘
-
+```
 Lists (Python's Dynamic Arrays)
+
 Lists are Python's built-in dynamic arrays. They're the most commonly used array-like structure.
+
 Creating Lists
-python# Empty list
+
+# python# Empty list
 empty_list = []
 
 # List with initial values
+```
 numbers = [1, 2, 3, 4, 5]
 fruits = ["apple", "banana", "cherry"]
-
+```
 # Mixed data types (Python allows this!)
+```
 mixed = [1, "hello", 3.14, True]
-
+```
 # Nested lists (2D array)
+```
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
-
+```
 # Using list() constructor
+```
 letters = list("abc")  # ['a', 'b', 'c']
 range_list = list(range(5))  # [0, 1, 2, 3, 4]
+```
 Accessing Elements
+```
 pythonfruits = ["apple", "banana", "cherry", "date"]
-
+```
 # Positive indexing (from start)
+```
 print(fruits[0])   # "apple"
 print(fruits[2])   # "cherry"
-
+```
 # Negative indexing (from end)
+```
 print(fruits[-1])  # "date" (last item)
 print(fruits[-2])  # "cherry" (second to last)
-
+```
 # Slicing [start:end:step]
+```
 print(fruits[1:3])    # ["banana", "cherry"]
 print(fruits[:2])     # ["apple", "banana"]
 print(fruits[2:])     # ["cherry", "date"]
 print(fruits[::2])    # ["apple", "cherry"] (every 2nd item)
 print(fruits[::-1])   # ["date", "cherry", "banana", "apple"] (reversed)
+```
 Modifying Lists
+```
 pythonnumbers = [1, 2, 3, 4, 5]
-
+```
 # Change a single element
+```
 numbers[0] = 10  # [10, 2, 3, 4, 5]
-
+```
 # Change multiple elements
+```
 numbers[1:3] = [20, 30]  # [10, 20, 30, 4, 5]
-
+```
 # Append (add to end)
+```
 numbers.append(6)  # [10, 20, 30, 4, 5, 6]
-
+```
 # Insert at specific position
+```
 numbers.insert(1, 15)  # [10, 15, 20, 30, 4, 5, 6]
-
+```
 # Extend (add multiple items)
+```
 numbers.extend([7, 8, 9])  # [10, 15, 20, 30, 4, 5, 6, 7, 8, 9]
-
+```
 # Remove by value
+```
 numbers.remove(30)  # Removes first occurrence of 30
-
+```
 # Remove by index
+```
 deleted = numbers.pop(2)  # Removes and returns item at index 2
-
+```
 # Remove last item
+```
 last = numbers.pop()  # Removes and returns last item
-
+```
 # Clear all items
+```
 numbers.clear()  # []
+```
 List Methods Cheat Sheet
+```
 pythonfruits = ["apple", "banana", "cherry", "banana"]
-
+```
 # Length
+```
 len(fruits)  # 4
-
+```
 # Count occurrences
+```
 fruits.count("banana")  # 2
-
+```
 # Find index of first occurrence
+```
 fruits.index("cherry")  # 2
-
+```
 # Sort (modifies original)
+```
 numbers = [3, 1, 4, 1, 5]
 numbers.sort()  # [1, 1, 3, 4, 5]
 numbers.sort(reverse=True)  # [5, 4, 3, 1, 1]
-
+```
 # Sorted (returns new list)
+```
 sorted_nums = sorted(numbers)  # Original unchanged
-
+```
 # Reverse (modifies original)
+```
 numbers.reverse()  # Reverses in place
-
+```
 # Copy
+```
 fruits_copy = fruits.copy()  # Shallow copy
 fruits_copy2 = fruits[:]     # Another way to copy
-
-Tuples (Immutable Arrays)
-Tuples are like lists but immutable (cannot be changed after creation).
-Why Use Tuples?
-
+```
+# Tuples (Immutable Arrays)
+# Tuples are like lists but immutable (cannot be changed after creation).
+# Why Use Tuples?
+```
 ✅ Faster than lists
 ✅ Protect data from accidental modification
 ✅ Can be used as dictionary keys
 ✅ Perfect for fixed data (coordinates, RGB colors, etc.)
-
-Creating Tuples
+```
+# Creating Tuples
 python
 # Empty tuple
 empty_tuple = ()
 
 # Single item tuple (note the comma!)
+```
 single = (5,)  # Without comma, it's just 5
 wrong = (5)    # This is just an integer
-
+```
 # Multiple items
+```
 coordinates = (10, 20)
 rgb = (255, 128, 0)
-
+```
 # Without parentheses (tuple packing)
+```
 point = 10, 20, 30
-
+```
 # Using tuple() constructor
+```
 tuple_from_list = tuple([1, 2, 3])
 Accessing Tuples
 pythonpoint = (10, 20, 30)
-
+```
 # Indexing (same as lists)
+```
 x = point[0]  # 10
 z = point[-1]  # 30
-
+```
 # Slicing (same as lists)
+```
 first_two = point[:2]  # (10, 20)
-
+```
 # Unpacking
+```
 x, y, z = point
 print(x)  # 10
 print(y)  # 20
 print(z)  # 30
-
+```
 # Unpacking with *
+```
 first, *rest = (1, 2, 3, 4, 5)
 print(first)  # 1
 print(rest)   # [2, 3, 4, 5]
 Tuple Methods
 pythonnumbers = (1, 2, 3, 2, 2, 4)
-
+```
 # Count occurrences
+```
 numbers.count(2)  # 3
-
+```
 # Find index
+```
 numbers.index(3)  # 2
-
+```
 # Length
+```
 len(numbers)  # 6
-
+```
 # Note: No append, remove, or other modification methods!
-When to Use Tuples vs Lists
-python# Use TUPLES for:
+# When to Use Tuples vs Lists
+# python# Use TUPLES for:
 # - Fixed data that shouldn't change
+```
 coordinates = (40.7128, -74.0060)  # NYC coordinates
 rgb_color = (255, 0, 0)  # Red color
 config = ("localhost", 8080)  # Server config
-
+```
 # Use LISTS for:
 # - Data that needs to change
+```
 shopping_cart = ["milk", "eggs"]
 shopping_cart.append("bread")  # Can modify
-
+```
+```
 to_do_list = ["email", "call", "meeting"]
 to_do_list.remove("email")  # Can remove
-
-Array Module
+```
+# Array Module
 Python's array module provides space-efficient arrays of basic values (numbers).
-When to Use?
+# When to Use?
 
-Need to store large amounts of numeric data
-Want better memory efficiency than lists
-All elements must be the same type
-
+Need to store large amounts of numeric data, Want better memory efficiency than lists
+, All elements must be the same type
+```
 Creating Arrays
 pythonimport array
-
+```
 # Type code 'i' = signed integer
+```
 numbers = array.array('i', [1, 2, 3, 4, 5])
-
+```
 # Type code 'd' = double (float)
+```
 floats = array.array('d', [1.1, 2.2, 3.3])
-
+```
 # Common type codes:
 # 'b' = signed char (1 byte)
 # 'i' = signed int (2 bytes)
 # 'f' = float (4 bytes)
 # 'd' = double (8 bytes)
+
 Array Operations
+
 pythonimport array
-
+```
 arr = array.array('i', [1, 2, 3])
-
+```
 # Append
+```
 arr.append(4)  # array('i', [1, 2, 3, 4])
-
+```
 # Extend
+```
 arr.extend([5, 6])  # array('i', [1, 2, 3, 4, 5, 6])
-
+```
 # Insert
+```
 arr.insert(0, 0)  # Insert 0 at index 0
-
+```
 # Remove
+```
 arr.remove(3)  # Remove first occurrence of 3
-
+```
 # Pop
+```
 last = arr.pop()  # Remove and return last item
-
+```
 # Access by index (same as lists)
+```
 print(arr[0])  # First element
+```
+# NumPy Arrays
 
-NumPy Arrays
 NumPy is the most powerful array library for numerical computing.
+
 Installation
 bashpip install numpy
 Creating NumPy Arrays
