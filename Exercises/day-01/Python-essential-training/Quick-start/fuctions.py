@@ -24,5 +24,3 @@ print(print('hello world'))
 print(type(None)) #Functions
 
 # print( None + 1) #TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
-# print( None + 1) #TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
-# print( None + 1) #TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
