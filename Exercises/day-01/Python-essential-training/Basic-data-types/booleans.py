@@ -53,3 +53,7 @@ if haveUmbrella or weatherIsNice:
     print('go for a walk')
 else:
     print( 'Stay inside')
+
+print(bool(-1) == 1)
+
+print(bytes(4))

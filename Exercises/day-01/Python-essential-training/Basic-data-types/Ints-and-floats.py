@@ -17,3 +17,5 @@ print(round(8.99999999))
 
 print(round(14/3, 2)) # we can use round as well to tell the amount of decimals we want 
 # 4.67 in this response we se two decimal as we specified 
+
+print(int('101', 2))
