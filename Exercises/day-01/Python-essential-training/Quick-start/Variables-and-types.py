@@ -1,4 +1,4 @@
-# Defining avariable 
+# Defining a variable 
 x = 5 
 name = 'jerson'
 print(name)
