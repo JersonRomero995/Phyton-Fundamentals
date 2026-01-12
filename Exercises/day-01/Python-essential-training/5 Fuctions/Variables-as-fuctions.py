@@ -171,3 +171,7 @@ products = [
 # Task: Use sorted() with a lambda function to sort this list by price, from most expensive to least expensive.
 
 print(sorted(products, key=lambda x : x['price'], reverse=True))
+
+
+def someFunc(var1, var2, var3, var4):
+print(someFunc(1,2,3,4))
