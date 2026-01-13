@@ -89,18 +89,18 @@ class UniqueList(list):
 #The super() Function
 #python
 
-super().append(item)
+#super().append(item)
 #super() lets you call methods from the parent class. Here's what happens:
 #python
 
-def append(self, item):
-    if item in self:  # Custom logic
-        return
-    super().append(item)  # Call the parent's (list's) append method
+#def append(self, item):
+#    if item in self:  # Custom logic
+#        return
+#    super().append(item)  # Call the parent's (list's) append method
 #This means: "Check if the item already exists (our custom rule), and if not, use the normal list append behavior."
 #Calling Parent's __init__
 #python
-
+# """""
 def __init__(self):
     super().__init__()  # Call list's __init__
     self.someProperty = 'Unique List!'  # Then add our own stuff
@@ -113,3 +113,5 @@ def __init__(self):
 #Polymorphism: Different classes can share method names but behave differently
 
 #Real-world example: You might have a Vehicle parent class, then Car, Truck, and Motorcycle child classes that inherit common vehicle properties but each have their own specific behaviors.
+
+"""
