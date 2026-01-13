@@ -64,34 +64,34 @@ print(uniqueList.someProperty)
 #Dog is the parent class (or superclass)
 #Chihuahua automatically gets all of Dog's attributes and methods
 
-python
+#python
 
 dog = Chihuahua('Roxy')
 print(dog.getLegs())  # This works even though Chihuahua doesn't define getLegs()!
 # Chihuahua inherited __init__, getLegs(), and _legs from Dog without writing any code.
 #Method Overriding
-python
+#python
 
 def speak(self):
     print(f'{self.name} says: Yap yap yap!')
 #Chihuahua overrides the speak() method from Dog. When you call dog.speak() on a Chihuahua object, Python uses the Chihuahua version, not the Dog version. This is called polymorphism - same method name, different behavior.
 #Adding New Methods
-python
+#python
 
 def wagTail(self):
     print('Vigorous wagging!')
 #Chihuahua adds its own method that Dog doesn't have. Child classes can extend functionality beyond what the parent provides.
 #Inheriting from Built-in Classes
-python
+#python
 
 class UniqueList(list):
 #You can inherit from Python's built-in classes! UniqueList is now a list with custom behavior.
 #The super() Function
-python
+#python
 
 super().append(item)
 #super() lets you call methods from the parent class. Here's what happens:
-python
+#python
 
 def append(self, item):
     if item in self:  # Custom logic
@@ -99,7 +99,7 @@ def append(self, item):
     super().append(item)  # Call the parent's (list's) append method
 #This means: "Check if the item already exists (our custom rule), and if not, use the normal list append behavior."
 #Calling Parent's __init__
-python
+#python
 
 def __init__(self):
     super().__init__()  # Call list's __init__
