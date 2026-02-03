@@ -171,3 +171,73 @@ This example will work too:"""
 
 print('I like "Monty Python"')
 
+#Boolean values
+
+'''To conclude with Python's literals, there are two additional ones.
+
+They're not as obvious as any of the previous ones, as they're used to represent a very abstract value ‒ truthfulness.
+
+Each time you ask Python if one number is greater than another, the question results in the creation of some specific data ‒ a Boolean value.
+
+The name comes from George Boole (1815-1864), the author of the fundamental work, The Laws of Thought, which contains the definition of Boolean algebra ‒ a part of algebra which makes use of only two distinct values: True and False, denoted as 1 and 0.
+
+A programmer writes a program, and the program asks questions. Python executes the program, and provides the answers. The program must be able to react according to the received answers.
+
+Fortunately, computers know only two kinds of answers:
+
+Yes, this is true;
+No, this is false.
+You'll never get a response like: I don't know or Probably yes, but I don't know for sure.
+
+Python, then, is a binary reptile.
+
+These two Boolean values have strict denotations in Python:
+
+True
+False
+
+You cannot change anything ‒ you have to take these symbols as they are, including case-sensitivity.'''
+
+print(True > False)
+print(True < False)
+
+ # LAB   Python literals - strings
+
+'''Scenario
+Write a one-line piece of code, using the print() function, as well as the newline and escape characters, to match the expected result outputted on three lines.
+
+Expected output
+Output
+"I'm"
+""learning""
+"""Python"""
+'''
+
+print('"I\'m"\n""learning""\n"""Python"""')
+
+#result
+'''
+"I'm"
+""learning""
+"""Python"""
+'''
+
+'''SECTION SUMMARY
+1. Literals are notations for representing some fixed values in code. Python has various types of literals - for example, a literal can be a number (numeric literals, e.g., 123), or a string (string literals, e.g., "I am a literal.").
+
+2. The binary system is a system of numbers that employs 2 as the base. Therefore, a binary number is made up of 0s and 1s only, e.g., 1010 is 10 in decimal.
+
+Octal and hexadecimal numeration systems, similarly, employ 8 and 16 as their bases respectively. The hexadecimal system uses the decimal numbers and six extra letters.
+3. Integers (or simply ints) are one of the numerical types supported by Python. They are numbers written without a fractional component, e.g., 256, or -1 (negative integers).
+
+4. Floating-point numbers (or simply floats) are another one of the numerical types supported by Python. They are numbers that contain (or are able to contain) a fractional component, e.g., 1.27.
+
+5. To encode an apostrophe or a quote inside a string, you can either use the escape character, e.g., 'I\'m happy.', or open and close the string using an opposite set of symbols to the ones you wish to encode, e.g., "I'm happy." to encode an apostrophe, and 'He said "Python", not "typhoon"' to encode a (double) quote.
+
+6. Boolean values are the two constant objects True and False used to represent truth values (in numeric contexts 1 is True, while 0 is False.
+
+
+Extra  
+
+There is one more, special literal that is used in Python: the None literal. This literal is a NoneType object, and it is used to represent the absence of a value. We'll tell you more about it soon.'''
+
