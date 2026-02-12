@@ -45,3 +45,4 @@ user-name = "Invalid"  # No hyphens
 user name = "Invalid"  # No spaces
 class = "Invalid"      # Can't use Python keywords
 
+Style Guide for Python Code  https://peps.python.org/pep-0008/

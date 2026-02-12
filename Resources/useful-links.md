@@ -11,6 +11,7 @@ Style Guide
 
 van Rossum, G., Warsaw, B., & Coghlan, N. (2001). PEP 8 – Style Guide for Python Code.
 https://peps.python.org/pep-0008/
+Style Guide for Python Code  https://peps.python.org/pep-0008/ 
 
 Books (Free Online)
 
